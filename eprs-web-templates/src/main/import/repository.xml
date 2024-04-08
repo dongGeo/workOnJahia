@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+   <modules jcr:primaryType="jnt:modules">
+      <eprs-web-templates j:dependencies="default search"
+                          j:installedModules="eprs-web-templates"
+                          j:modulePriority="0"
+                          j:moduleType="templatesSet"
+                          j:title="eprs-web-templates"
+                          jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                          jcr:primaryType="jnt:module">
+         <sources j:title="eprs-web-templates (1.0.0-SNAPSHOT)"
+                  jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-eprs-web-templates-1.0.0-SNAPSHOT">
+            <src jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                 jcr:primaryType="jnt:folder">
+               <main jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                     jcr:primaryType="jnt:folder">
+                  <import jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                          jcr:primaryType="jnt:folder">
+                     <modules jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:folder">
+                        <eprs-web-templates jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                            jcr:primaryType="jnt:folder">
+                           <templates jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                      jcr:primaryType="jnt:folder">
+                              <files jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                     jcr:primaryType="jnt:folder">
+                                 <logo jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                       jcr:primaryType="jnt:folder">
+                                    <icons jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                           jcr:primaryType="jnt:folder">
+                                       <ep-logo-light.svg jcr:mixinTypes="jmix:image jmix:image" jcr:primaryType="jnt:file"/>
+                                       <eprs-link.svg jcr:mixinTypes="jmix:image jmix:image" jcr:primaryType="jnt:file"/>
+                                       <eprs.svg jcr:mixinTypes="jmix:image jmix:image" jcr:primaryType="jnt:file"/>
+                                       <logo-light.svg jcr:mixinTypes="jmix:image jmix:image" jcr:primaryType="jnt:file"/>
+                                       <social jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                               jcr:primaryType="jnt:folder">
+                                          <fb-icon.svg jcr:mixinTypes="jmix:image jmix:image" jcr:primaryType="jnt:file"/>
+                                          <linkedin-icon.svg jcr:mixinTypes="jmix:image jmix:image" jcr:primaryType="jnt:file"/>
+                                          <x-icon.svg jcr:mixinTypes="jmix:image jmix:image" jcr:primaryType="jnt:file"/>
+                                       </social>
+                                    </icons>
+                                 </logo>
+                              </files>
+                           </templates>
+                        </eprs-web-templates>
+                     </modules>
+                  </import>
+                  <resources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                             jcr:primaryType="jnt:folder">
+                     <eprsint_burger jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                     jcr:primaryType="jnt:nodeTypeFolder">
+                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                           <burger.jsp jcr:primaryType="jnt:viewFile"
+                                       nodeTypeName="eprsint:burger"
+                                       sourceCode="&lt;%@ page language=&#34;java&#34; contentType=&#34;text/html;charset=UTF-8&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;template&#34; uri=&#34;http://www.jahia.org/tags/templateLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;c&#34; uri=&#34;http://java.sun.com/jsp/jstl/core&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;fn&#34; uri=&#34;http://java.sun.com/jsp/jstl/functions&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;fmt&#34; uri=&#34;http://java.sun.com/jsp/jstl/fmt&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;jcr&#34; uri=&#34;http://www.jahia.org/tags/jcr&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;ui&#34; uri=&#34;http://www.jahia.org/tags/uiComponentsLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;functions&#34; uri=&#34;http://www.jahia.org/tags/functions&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;query&#34; uri=&#34;http://www.jahia.org/tags/queryLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;utility&#34; uri=&#34;http://www.jahia.org/tags/utilityLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;s&#34; uri=&#34;http://www.jahia.org/tags/search&#34; %&gt;&#xA;&lt;%--@elvariable id=&#34;currentNode&#34; type=&#34;org.jahia.services.content.JCRNodeWrapper&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;out&#34; type=&#34;java.io.PrintWriter&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;script&#34; type=&#34;org.jahia.services.render.scripting.Script&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;scriptInfo&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;workspace&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;renderContext&#34; type=&#34;org.jahia.services.render.RenderContext&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;currentResource&#34; type=&#34;org.jahia.services.render.Resource&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;url&#34; type=&#34;org.jahia.services.render.URLGenerator&#34;--%&gt;&#xA;&lt;div class=&#34;header-section__burger&#34; style=&#34; &#34;&gt;&#xA;            &lt;button tabindex=&#34;1&#34; type=&#34;button&#34; aria-label=&#34;Burger menu&#34; class=&#34;square-button&#34; id=&#34;burgerMenuButton&#34; aria-expanded=&#34;false&#34;&gt;&#xA;              &lt;i class=&#34;ph ph-list&#34;&gt;&lt;/i&gt;&#xA;              &lt;span class=&#34;sr-only&#34;&gt;Menu&lt;/span&gt;&#xA;              &lt;span class=&#34;button_description&#34;&gt;Menu&lt;/span&gt;&#xA;            &lt;/button&gt;&#xA;          &lt;/div&gt;"/>
+                        </html>
+                     </eprsint_burger>
+                     <eprsint_profile jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                      jcr:primaryType="jnt:nodeTypeFolder">
+                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                           <profile.jsp jcr:primaryType="jnt:viewFile"
+                                        nodeTypeName="eprsint:profile"
+                                        sourceCode="&lt;%@ page language=&#34;java&#34; contentType=&#34;text/html;charset=UTF-8&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;template&#34; uri=&#34;http://www.jahia.org/tags/templateLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;c&#34; uri=&#34;http://java.sun.com/jsp/jstl/core&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;fn&#34; uri=&#34;http://java.sun.com/jsp/jstl/functions&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;fmt&#34; uri=&#34;http://java.sun.com/jsp/jstl/fmt&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;jcr&#34; uri=&#34;http://www.jahia.org/tags/jcr&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;ui&#34; uri=&#34;http://www.jahia.org/tags/uiComponentsLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;functions&#34; uri=&#34;http://www.jahia.org/tags/functions&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;query&#34; uri=&#34;http://www.jahia.org/tags/queryLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;utility&#34; uri=&#34;http://www.jahia.org/tags/utilityLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;s&#34; uri=&#34;http://www.jahia.org/tags/search&#34; %&gt;&#xA;&lt;%--@elvariable id=&#34;currentNode&#34; type=&#34;org.jahia.services.content.JCRNodeWrapper&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;out&#34; type=&#34;java.io.PrintWriter&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;script&#34; type=&#34;org.jahia.services.render.scripting.Script&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;scriptInfo&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;workspace&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;renderContext&#34; type=&#34;org.jahia.services.render.RenderContext&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;currentResource&#34; type=&#34;org.jahia.services.render.Resource&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;url&#34; type=&#34;org.jahia.services.render.URLGenerator&#34;--%&gt;&#xA; &lt;div class=&#34;header-section__profile&#34; style=&#34;display:  ;&#34;&gt;&#xA;   &lt;%-- url /jahia/profile --%&gt;&#xA;            &lt;button tabindex=&#34;1&#34; type=&#34;button&#34; aria-label=&#34;Go to Profile Page&#34; class=&#34;square-button&#34;&gt;&#xA;              &lt;i class=&#34;ph ph-user&#34;&gt;&lt;/i&gt;&#xA;              &lt;span class=&#34;sr-only&#34;&gt;Go to Profile Page&lt;/span&gt;&#xA;              &lt;span class=&#34;button_description&#34;&gt;My EPRS&lt;/span&gt;&#xA;            &lt;/button&gt;&#xA;   &lt;/div&gt;&#xA;           "/>
+                        </html>
+                     </eprsint_profile>
+                     <eprsmix_siteBackground jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                             jcr:primaryType="jnt:nodeTypeFolder">
+                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                           <siteBackground.jsp jcr:primaryType="jnt:viewFile"
+                                               nodeTypeName="eprsmix:siteBackground"
+                                               sourceCode="&lt;%@ page language=&#34;java&#34; contentType=&#34;text/html;charset=UTF-8&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;template&#34; uri=&#34;http://www.jahia.org/tags/templateLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;c&#34; uri=&#34;http://java.sun.com/jsp/jstl/core&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;fn&#34; uri=&#34;http://java.sun.com/jsp/jstl/functions&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;fmt&#34; uri=&#34;http://java.sun.com/jsp/jstl/fmt&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;jcr&#34; uri=&#34;http://www.jahia.org/tags/jcr&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;ui&#34; uri=&#34;http://www.jahia.org/tags/uiComponentsLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;functions&#34; uri=&#34;http://www.jahia.org/tags/functions&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;query&#34; uri=&#34;http://www.jahia.org/tags/queryLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;utility&#34; uri=&#34;http://www.jahia.org/tags/utilityLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;s&#34; uri=&#34;http://www.jahia.org/tags/search&#34; %&gt;&#xA;&lt;%--@elvariable id=&#34;currentNode&#34; type=&#34;org.jahia.services.content.JCRNodeWrapper&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;out&#34; type=&#34;java.io.PrintWriter&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;script&#34; type=&#34;org.jahia.services.render.scripting.Script&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;scriptInfo&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;workspace&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;renderContext&#34; type=&#34;org.jahia.services.render.RenderContext&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;currentResource&#34; type=&#34;org.jahia.services.render.Resource&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;url&#34; type=&#34;org.jahia.services.render.URLGenerator&#34;--%&gt;&#xA;&#xA;      &lt;figure&gt;&#xA;              &lt;img id=&#34;backgroundImage1&#34; alt=&#34;&#34; src=&#34;/integration_html/assets/images/2.png&#34; class=&#34;show&#34;&gt;&#xA;              &lt;img id=&#34;backgroundImage2&#34; alt=&#34;&#34;&gt;&#xA;              &lt;div class=&#34;background__gradient-overlay&#34;&gt;&lt;/div&gt;&#xA;          &lt;/figure&gt;"/>
+                        </html>
+                     </eprsmix_siteBackground>
+                     <eprsmix_siteLogo jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                       jcr:primaryType="jnt:nodeTypeFolder">
+                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                           <siteLogo.jsp jcr:primaryType="jnt:viewFile"
+                                         nodeTypeName="eprsmix:siteLogo"
+                                         sourceCode="&lt;%@ page language=&#34;java&#34; contentType=&#34;text/html;charset=UTF-8&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;template&#34; uri=&#34;http://www.jahia.org/tags/templateLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;c&#34; uri=&#34;http://java.sun.com/jsp/jstl/core&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;fn&#34; uri=&#34;http://java.sun.com/jsp/jstl/functions&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;fmt&#34; uri=&#34;http://java.sun.com/jsp/jstl/fmt&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;jcr&#34; uri=&#34;http://www.jahia.org/tags/jcr&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;ui&#34; uri=&#34;http://www.jahia.org/tags/uiComponentsLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;functions&#34; uri=&#34;http://www.jahia.org/tags/functions&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;query&#34; uri=&#34;http://www.jahia.org/tags/queryLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;utility&#34; uri=&#34;http://www.jahia.org/tags/utilityLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;s&#34; uri=&#34;http://www.jahia.org/tags/search&#34; %&gt;&#xA;&lt;%--@elvariable id=&#34;currentNode&#34; type=&#34;org.jahia.services.content.JCRNodeWrapper&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;out&#34; type=&#34;java.io.PrintWriter&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;script&#34; type=&#34;org.jahia.services.render.scripting.Script&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;scriptInfo&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;workspace&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;renderContext&#34; type=&#34;org.jahia.services.render.RenderContext&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;currentResource&#34; type=&#34;org.jahia.services.render.Resource&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;url&#34; type=&#34;org.jahia.services.render.URLGenerator&#34;--%&gt;&#xA;&#xA;&lt;c:set var=&#34;logo&#34; value=&#34;${currentNode.properties['logo'].node}&#34;/&gt;&#xA;&lt;c:if test=&#34;${!empty logo}&#34;&gt;&#xA;  &lt;%-- ${logo.url} already adds the context the url&#xA;       so we need to tell the tag &lt;c:url&gt; not add the context a second time by specifying context=&#34;/&#34; --%&gt;&#xA;       &#xA;  &lt;c:url var=&#34;logoUrl&#34; value=&#34;${logo.url}&#34; context=&#34;/&#34;/&gt;&#xA;  &lt;c:url var=&#34;homePageURL&#34; value=&#34;${renderContext.site.home.url}&#34; context=&#34;/&#34;/&gt;  &#xA;  &#xA;  &lt;a href=&#34;${homePageURL}&#34; &gt;&#xA;    &lt;img id=&#34;epLogo&#34; alt=&#34;European Parliament Logo&#34; src=&#34;${logoUrl}&#34;&gt;&#xA;  &lt;/a&gt; &#xA;&lt;/c:if&gt;"/>
+                        </html>
+                     </eprsmix_siteLogo>
+                     <eprsmix_siteSocialLinks jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                              jcr:primaryType="jnt:nodeTypeFolder">
+                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                           <siteSocialLinks.jsp jcr:primaryType="jnt:viewFile"
+                                                nodeTypeName="eprsmix:siteSocialLinks"
+                                                sourceCode="&lt;%@ page language=&#34;java&#34; contentType=&#34;text/html;charset=UTF-8&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;template&#34; uri=&#34;http://www.jahia.org/tags/templateLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;c&#34; uri=&#34;http://java.sun.com/jsp/jstl/core&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;fn&#34; uri=&#34;http://java.sun.com/jsp/jstl/functions&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;fmt&#34; uri=&#34;http://java.sun.com/jsp/jstl/fmt&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;jcr&#34; uri=&#34;http://www.jahia.org/tags/jcr&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;ui&#34; uri=&#34;http://www.jahia.org/tags/uiComponentsLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;functions&#34; uri=&#34;http://www.jahia.org/tags/functions&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;query&#34; uri=&#34;http://www.jahia.org/tags/queryLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;utility&#34; uri=&#34;http://www.jahia.org/tags/utilityLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;s&#34; uri=&#34;http://www.jahia.org/tags/search&#34; %&gt;&#xA;&lt;%--@elvariable id=&#34;currentNode&#34; type=&#34;org.jahia.services.content.JCRNodeWrapper&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;out&#34; type=&#34;java.io.PrintWriter&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;script&#34; type=&#34;org.jahia.services.render.scripting.Script&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;scriptInfo&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;workspace&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;renderContext&#34; type=&#34;org.jahia.services.render.RenderContext&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;currentResource&#34; type=&#34;org.jahia.services.render.Resource&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;url&#34; type=&#34;org.jahia.services.render.URLGenerator&#34;--%&gt;&#xA;&#xA;&lt;%-- if social icons were included, get the urls --%&gt;&#xA;&lt;c:set var=&#34;facebookLink&#34; value=&#34;${currentNode.properties.facebookLink.string}&#34;/&gt;&#xA;&lt;c:set var=&#34;googlePlusLink&#34; value=&#34;${currentNode.properties.googlePlusLink.string}&#34;/&gt;&#xA;&lt;c:set var=&#34;twitterLink&#34; value=&#34;${currentNode.properties.twitterLink.string}&#34;/&gt;&#xA;&lt;c:set var=&#34;youtubeLink&#34; value=&#34;${currentNode.properties.youtubeLink.string}&#34;/&gt;&#xA;&lt;c:set var=&#34;instagramLink&#34; value=&#34;${currentNode.properties.instagramLink.string}&#34;/&gt;&#xA;&lt;c:set var=&#34;linkedinLink&#34; value=&#34;${currentNode.properties.linkedinLink.string}&#34;/&gt;&#xA;&lt;c:set var=&#34;pinterestLink&#34; value=&#34;${currentNode.properties.pinterestLink.string}&#34;/&gt;&#xA;&#xA;&lt;!-- Site Social Links --&gt;&#xA;&#xA;&lt;ul class=&#34;footer-socials list-inline pull-right&#34;&gt;&#xA;    &lt;c:if test=&#34;${not empty facebookLink and facebookLink != 'http://'}&#34;&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;${facebookLink}&#34; title=&#34;Facebook&#34;&gt;&#xA;            &lt;i class=&#34;fa fa-facebook&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;        &lt;/li&gt;&#xA;    &lt;/c:if&gt;&#xA;    &lt;c:if test=&#34;${not empty googlePlusLink and googlePlusLink != 'http://'}&#34;&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;${googlePlusLink}&#34; title=&#34;Google Plus&#34;&gt;&#xA;            &lt;i class=&#34;fa fa-google-plus&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;        &lt;/li&gt;&#xA;    &lt;/c:if&gt;&#xA;    &lt;c:if test=&#34;${not empty twitterLink and twitterLink != 'http://'}&#34;&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;${twitterLink}&#34; title=&#34;Twitter&#34;&gt;&#xA;            &lt;i class=&#34;fa fa-twitter&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;        &lt;/li&gt;&#xA;    &lt;/c:if&gt;&#xA;    &lt;c:if test=&#34;${not empty youtubeLink and youtubeLink != 'http://'}&#34;&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;${youtubeLink}&#34; title=&#34;YouTube&#34;&gt;&#xA;            &lt;i class=&#34;fa fa-youtube&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;        &lt;/li&gt;&#xA;    &lt;/c:if&gt;&#xA;    &lt;c:if test=&#34;${not empty instagramLink and instagramLink != 'http://'}&#34;&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;${instagramLink}&#34; title=&#34;Instagram&#34;&gt;&#xA;            &lt;i class=&#34;fa fa-instagram&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;        &lt;/li&gt;&#xA;    &lt;/c:if&gt;&#xA;    &lt;c:if test=&#34;${not empty linkedinLink and linkedinLink != 'http://'}&#34;&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;${linkedinLink}&#34; title=&#34;LinkedIn&#34;&gt;&#xA;            &lt;i class=&#34;fa fa-linkedin&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;        &lt;/li&gt;&#xA;    &lt;/c:if&gt;&#xA;    &lt;c:if test=&#34;${not empty pinterestLink and pinterestLink != 'http://'}&#34;&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;${pinterestLink}&#34; title=&#34;Pinterest&#34;&gt;&#xA;            &lt;i class=&#34;fa fa-pinterest&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;        &lt;/li&gt;&#xA;    &lt;/c:if&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;"/>
+                        </html>
+                     </eprsmix_siteSocialLinks>
+                     <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                   jcr:primaryType="jnt:nodeTypeFolder">
+                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                           <template.article.jsp jcr:primaryType="jnt:templateFile"
+                                                 nodeTypeName="jnt:template"
+                                                 sourceCode=" &lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34;&#xA;&#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&gt;&#xA;&lt;!--[if IE 8]&gt; &lt;html lang=&#34;en&#34; class=&#34;ie8&#34;&gt; &lt;![endif]--&gt;&#xA;&lt;!--[if IE 9]&gt; &lt;html lang=&#34;en&#34; class=&#34;ie9&#34;&gt; &lt;![endif]--&gt;&#xA;&lt;!--[if !IE]&gt;&lt;!--&gt;&#xA;&lt;html lang=&#34;en&#34;&gt; &lt;!--&lt;![endif]--&gt;&#xA;  &lt;%@ page language=&#34;java&#34; contentType=&#34;text/html;charset=UTF-8&#34; %&gt;&#xA;  &lt;%@ taglib prefix=&#34;template&#34; uri=&#34;http://www.jahia.org/tags/templateLib&#34; %&gt;&#xA;  &lt;%@ taglib prefix=&#34;c&#34; uri=&#34;http://java.sun.com/jsp/jstl/core&#34; %&gt;&#xA;  &lt;%@ taglib prefix=&#34;fn&#34; uri=&#34;http://java.sun.com/jsp/jstl/functions&#34; %&gt;&#xA;  &lt;%@ taglib prefix=&#34;jcr&#34; uri=&#34;http://www.jahia.org/tags/jcr&#34; %&gt;&#xA;  &lt;%@ taglib prefix=&#34;fmt&#34; uri=&#34;http://java.sun.com/jsp/jstl/fmt&#34; %&gt;&#xA;  &lt;%--@elvariable id=&#34;currentNode&#34; type=&#34;org.jahia.services.content.JCRNodeWrapper&#34;--%&gt;&#xA;  &lt;%--@elvariable id=&#34;out&#34; type=&#34;java.io.PrintWriter&#34;--%&gt;&#xA;  &lt;%--@elvariable id=&#34;script&#34; type=&#34;org.jahia.services.render.scripting.Script&#34;--%&gt;&#xA;  &lt;%--@elvariable id=&#34;scriptInfo&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;  &lt;%--@elvariable id=&#34;workspace&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;  &lt;%--@elvariable id=&#34;renderContext&#34; type=&#34;org.jahia.services.render.RenderContext&#34;--%&gt;&#xA;  &lt;%--@elvariable id=&#34;currentResource&#34; type=&#34;org.jahia.services.render.Resource&#34;--%&gt;&#xA;  &lt;%--@elvariable id=&#34;url&#34; type=&#34;org.jahia.services.render.URLGenerator&#34;--%&gt;&#xA;  &#xA;  &lt;c:set var=&#34;siteNode&#34; value=&#34;${renderContext.site}&#34;/&gt;&#xA;  &#xA;  &lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width&#34;&gt;&#xA;    &lt;title&gt;EPRS - Home&lt;/title&gt;  &#xA;    &#xA;    &lt;title&gt;${fn:escapeXml(renderContext.mainResource.node.displayableName)}&lt;/title&gt;&#xA;    &#xA;    &lt;!-- Meta --&gt;&#xA;    &lt;meta charset=&#34;utf-8&#34;&gt;&#xA;    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;&#xA;    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;&#xA;    &lt;meta name=&#34;author&#34; content=&#34;&#34;&gt;&#xA;    &#xA;    &lt;meta http-equiv=&#34;cache-control&#34; content=&#34;must-revalidate&#34; /&gt;&#xA;    &#xA;    &lt;!-- Favicon --&gt;&#xA;    &lt;c:choose&gt;&#xA;      &lt;c:when test=&#34;${jcr:isNodeType(renderContext.site, 'eprsmix:favicon')}&#34;&gt;&#xA;        &lt;template:module path=&#34;${renderContext.site.path}&#34; view=&#34;favicon&#34; /&gt;&#xA;      &lt;/c:when&gt;&#xA;      &lt;c:otherwise&gt;&#xA;        &lt;link rel=&#34;shortcut icon&#34; href=&#34;${url.context}${url.currentModule}/img/favicon/favicon.ico&#34; type=&#34;image/x-icon&#34;&gt;&#xA;      &lt;/c:otherwise&gt;&#xA;    &lt;/c:choose&gt;&#xA;    &#xA;    &lt;!-- Web Fonts --&gt;&#xA;    &lt;%-- Using local web fonts versus the google resource. If you want to change to google please uncomment this and comment out the local open-sans-webfonts.css&#xA;         &lt;link rel='stylesheet' type='text/css'&#xA;         href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;amp;subset=cyrillic,latin'&gt;         &#xA;         &lt;template:addResources type=&#34;css&#34; resources=&#34;open-sans-webfonts.css&#34;/&gt; --%&gt;  &#xA;    &#xA;    &lt;template:addResources type=&#34;javascript&#34; resources=&#34;index.js&#34; /&gt; &#xA;    &lt;template:addResources type=&#34;css&#34; resources=&#34;reset.css&#34; /&gt;&#xA;    &lt;template:addResources type=&#34;css&#34; resources=&#34;main.css&#34; /&gt;   &#xA;    &#xA;    &lt;!-- JS Global Compulsory --&gt;&#xA;    &lt;template:addResources type=&#34;javascript&#34; resources=&#34;jquery.min.js&#34;/&gt;&#xA;    &#xA;    &lt;link&#xA;          rel=&#34;stylesheet&#34;&#xA;          href=&#34;https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css&#34;&#xA;          /&gt;&#xA;    &lt;script src=&#34;https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js&#34;&gt;&lt;/script&gt;&#xA;    &lt;script src=&#34;https://unpkg.com/@phosphor-icons/web&#34;&gt;&lt;/script&gt;&#xA;    &#xA;  &lt;/head&gt;&#xA;  &lt;body&gt;&#xA;    &#xA;    &lt;div class=&#34;background&#34; aria-hidden=&#34;true&#34;&gt;&#xA;     &lt;%-- &lt;template:area path=&#34;background&#34;/&gt;--%&gt;&#xA;      &#xA;      &lt;figure&gt;      &#xA;            &lt;c:choose&gt;&#xA;              &lt;%-- check to see if the site has site logo specified, if not then use the logo area as defined in the template definition--%&gt;&#xA;              &lt;c:when test=&#34;${jcr:isNodeType(siteNode, 'eprsmix:background')}&#34;&gt;&#xA;                    &lt;template:module node=&#34;${siteNode}&#34; view=&#34;default&#34; nodeTypes=&#34;eprsmix:background&#34; editable=&#34;true&#34;/&gt; &#xA;              &lt;/c:when&gt;&#xA;              &lt;c:otherwise&gt; &#xA;                  &lt;img id=&#34;backgroundImage1&#34; alt=&#34;&#34; src=&#34;${url.context}${url.currentModule}/images/backgroung/2.png&#34; class=&#34;&#34;&gt;&#xA;                  &lt;img id=&#34;backgroundImage2&#34; alt=&#34;&#34; src=&#34;${url.context}${url.currentModule}/images/backgroung/2.png&#34; class=&#34;show&#34;&gt;&#xA;              &lt;/c:otherwise&gt;&#xA;            &lt;/c:choose&gt;&#xA;         &lt;div class=&#34;background__gradient-overlay&#34;&gt;&lt;/div&gt;&#xA;      &lt;/figure&gt;&#xA;    &lt;/div&gt;  &#xA;    &#xA;    &lt;header&gt;&#xA;      &lt;section class=&#34;header-section&#34; role=&#34;toolbar&#34;&gt;&#xA;        &lt;div class=&#34;header-section__base&#34;&gt;&#xA;          &#xA;          &lt;div class=&#34;header-section__color-mode&#34;&gt;            &#xA;            &lt;button tabindex=&#34;0&#34; type=&#34;button&#34; aria-label=&#34;Toggle Color Mode&#34; id=&#34;colorModeToggle&#34; class=&#34;square-button&#34;&gt;&#xA;              &lt;i id=&#34;colorModeIcon&#34; class=&#34;ph ph-sun&#34;&gt;&lt;/i&gt;&#xA;              &lt;span class=&#34;button_description&#34;&gt;Dark Mode&lt;/span&gt;&#xA;              &lt;span class=&#34;sr-only&#34;&gt;Toggle Color Mode&lt;/span&gt;&#xA;            &lt;/button&gt; &#xA;          &lt;/div&gt;&#xA;               &lt;c:if test=&#34;${jcr:isNodeType(siteNode, 'eprsmix:siteLogo')}&#34;&gt;&#xA;                 &lt;div class=&#34;header-section__logo&#34;&gt;&#xA;                    &lt;template:module node=&#34;${siteNode}&#34; view=&#34;default&#34; nodeTypes=&#34;eprsmix:siteLogo&#34; editable=&#34;true&#34;/&gt; &#xA;                &lt;/div&gt;&#xA;          &lt;/c:if&gt;&#xA;          &lt;template:area path=&#34;header-section&#34;/&gt; &#xA;           &lt;/div&gt;&#xA;        &#xA;      &lt;/section&gt;&#xA;      &#xA;      &lt;nav class=&#34;hot-topics-nav&#34; role=&#34;navigation&#34; id=&#34;navigation&#34;&gt;&#xA;        &lt;div class=&#34;hot-topics-nav__background&#34;&gt;&#xA;          &lt;figure&gt;&lt;/figure&gt;&#xA;        &lt;/div&gt;        &#xA;        &lt;template:area path=&#34;nav-menu&#34;/&gt; &#xA;      &lt;/nav&gt;&#xA;    &lt;/header&gt;&#xA;    &lt;main class=&#34;homepage&#34;&gt;&lt;%-- class variable --%&gt;&#xA;      &lt;template:area path=&#34;pageTitle&#34;/&gt;&#xA;      &#xA;      &lt;template:area path=&#34;search-section&#34;/&gt; &lt;%-- Show on page home pagetemplate --%&gt;&#xA;      &#xA;      &lt;template:area path=&#34;pagecontent&#34;/&gt;&#xA;      &#xA;      &#xA;      &lt;template:area path=&#34;aside-visible&#34;/&gt;&lt;%-- Show on page article pagetemplate --%&gt;&#xA;      &lt;template:area path=&#34;aside-burger&#34;/&gt;  &lt;%-- Show on page article pagetemplate --%&gt;      &#xA;    &lt;/main&gt;&#xA;    &lt;footer&gt;&#xA;      &lt;template:area path=&#34;footer&#34;/&gt; &#xA;    &lt;/footer&gt;&#xA; &lt;c:if test=&#34;${renderContext.editMode}&#34;&gt;&#xA;     &lt;template:addResources type=&#34;css&#34; resources=&#34;edit.css&#34; /&gt;&#xA; &lt;/c:if&gt;&#xA; &lt;template:addResources type=&#34;css&#34; resources=&#34;960.css,01web.css&#34;/&gt;&#xA; &lt;template:theme/&gt;&#xA; &#xA;&lt;/body&gt;&#xA;&lt;/html&gt;&#xA;"/>
+                        </html>
+                     </jnt_template>
+                     <jnt_user jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                               jcr:primaryType="jnt:nodeTypeFolder">
+                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                           <user.hidden.loginForm.jsp jcr:primaryType="jnt:viewFile"
+                                                      nodeTypeName="jnt:user"
+                                                      sourceCode="&lt;%@ page language=&#34;java&#34; contentType=&#34;text/html;charset=UTF-8&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;template&#34; uri=&#34;http://www.jahia.org/tags/templateLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;c&#34; uri=&#34;http://java.sun.com/jsp/jstl/core&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;fn&#34; uri=&#34;http://java.sun.com/jsp/jstl/functions&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;fmt&#34; uri=&#34;http://java.sun.com/jsp/jstl/fmt&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;jcr&#34; uri=&#34;http://www.jahia.org/tags/jcr&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;ui&#34; uri=&#34;http://www.jahia.org/tags/uiComponentsLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;functions&#34; uri=&#34;http://www.jahia.org/tags/functions&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;query&#34; uri=&#34;http://www.jahia.org/tags/queryLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;utility&#34; uri=&#34;http://www.jahia.org/tags/utilityLib&#34; %&gt;&#xA;&lt;%@ taglib prefix=&#34;s&#34; uri=&#34;http://www.jahia.org/tags/search&#34; %&gt;&#xA;&lt;%--@elvariable id=&#34;currentNode&#34; type=&#34;org.jahia.services.content.JCRNodeWrapper&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;out&#34; type=&#34;java.io.PrintWriter&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;script&#34; type=&#34;org.jahia.services.render.scripting.Script&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;scriptInfo&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;workspace&#34; type=&#34;java.lang.String&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;renderContext&#34; type=&#34;org.jahia.services.render.RenderContext&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;currentResource&#34; type=&#34;org.jahia.services.render.Resource&#34;--%&gt;&#xA;&lt;%--@elvariable id=&#34;url&#34; type=&#34;org.jahia.services.render.URLGenerator&#34;--%&gt;&#xA;&#xA;&lt;jcr:nodeProperty var=&#34;picture&#34; node=&#34;${currentNode}&#34; name=&#34;j:picture&#34;/&gt;&#xA;&lt;c:set var=&#34;firstname&#34; value=&#34;${currentNode.properties['j:firstName'].string}&#34;/&gt;&#xA;&lt;c:set var=&#34;lastname&#34; value=&#34;${currentNode.properties['j:lastName'].string}&#34;/&gt;&#xA;&lt;a class=&#34;dropdown-toggle&#34; data-toggle=&#34;dropdown&#34; href=&#34;#&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-user&#34;&gt;&lt;/i&gt;&amp;nbsp;${fn:escapeXml(empty firstname and empty lastname ? currentNode.name : firstname)}&amp;nbsp;${fn:escapeXml(lastname)}&#xA;    &lt;span class=&#34;caret&#34;&gt;&lt;/span&gt;&#xA;&lt;/a&gt;&#xA;&lt;ul class=&#34;topbar-dropdown&#34;&gt;"/>
+                        </html>
+                     </jnt_user>
+                  </resources>
+               </main>
+            </src>
+         </sources>
+         <portlets jcr:primaryType="jnt:portletFolder"/>
+         <files jcr:primaryType="jnt:folder">
+            <icons jcr:primaryType="jnt:folder">
+               <ep-logo-light.svg jcr:mixinTypes="jmix:image" jcr:primaryType="jnt:file">
+                  <jcr:content j:lastExtractionDate="2024-04-06T19:24:55.337+02:00"
+                               jcr:mimeType="image/svg+xml"
+                               jcr:primaryType="jnt:resource"/>
+               </ep-logo-light.svg>
+               <eprs-link.svg jcr:mixinTypes="jmix:image" jcr:primaryType="jnt:file">
+                  <jcr:content j:lastExtractionDate="2024-04-06T19:24:55.305+02:00"
+                               jcr:mimeType="image/svg+xml"
+                               jcr:primaryType="jnt:resource"/>
+               </eprs-link.svg>
+               <eprs.svg jcr:mixinTypes="jmix:image" jcr:primaryType="jnt:file">
+                  <jcr:content j:lastExtractionDate="2024-04-06T19:24:55.393+02:00"
+                               jcr:mimeType="image/svg+xml"
+                               jcr:primaryType="jnt:resource"/>
+               </eprs.svg>
+               <logo-light.svg jcr:mixinTypes="jmix:image" jcr:primaryType="jnt:file">
+                  <jcr:content j:lastExtractionDate="2024-04-06T19:24:55.365+02:00"
+                               jcr:mimeType="image/svg+xml"
+                               jcr:primaryType="jnt:resource"/>
+               </logo-light.svg>
+               <social jcr:primaryType="jnt:folder">
+                  <fb-icon.svg jcr:mixinTypes="jmix:image" jcr:primaryType="jnt:file">
+                     <jcr:content j:lastExtractionDate="2024-04-06T19:24:55.143+02:00"
+                                  jcr:mimeType="image/svg+xml"
+                                  jcr:primaryType="jnt:resource"/>
+                  </fb-icon.svg>
+                  <linkedin-icon.svg jcr:mixinTypes="jmix:image" jcr:primaryType="jnt:file">
+                     <jcr:content j:lastExtractionDate="2024-04-06T19:24:55.252+02:00"
+                                  jcr:mimeType="image/svg+xml"
+                                  jcr:primaryType="jnt:resource"/>
+                  </linkedin-icon.svg>
+                  <x-icon.svg jcr:mixinTypes="jmix:image" jcr:primaryType="jnt:file">
+                     <jcr:content j:lastExtractionDate="2024-04-06T19:24:55.279+02:00"
+                                  jcr:mimeType="image/svg+xml"
+                                  jcr:primaryType="jnt:resource"/>
+                  </x-icon.svg>
+               </social>
+            </icons>
+         </files>
+         <contents jcr:primaryType="jnt:contentFolder"/>
+         <templates jcr:primaryType="jnt:templatesFolder">
+            <files jcr:primaryType="jnt:folder">
+               <themes jcr:primaryType="jnt:folder">
+                  <default jcr:primaryType="jnt:folder"/>
+               </themes>
+               <thumbnails jcr:primaryType="jnt:folder">
+                  <news-entry.png j:height="100"
+                                  j:width="120"
+                                  jcr:mixinTypes="jmix:image"
+                                  jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                  </news-entry.png>
+                  <events.png j:height="100"
+                              j:width="120"
+                              jcr:mixinTypes="jmix:image"
+                              jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                  </events.png>
+                  <_x0033_-col.png j:height="100"
+                                   j:width="120"
+                                   jcr:mixinTypes="jmix:image"
+                                   jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                  </_x0033_-col.png>
+                  <simple.png j:height="100"
+                              j:width="120"
+                              jcr:mixinTypes="jmix:image"
+                              jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                  </simple.png>
+                  <no-preview.png j:height="100"
+                                  j:width="120"
+                                  jcr:mixinTypes="jmix:image"
+                                  jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                  </no-preview.png>
+                  <news.png j:height="100"
+                            j:width="120"
+                            jcr:mixinTypes="jmix:image"
+                            jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                  </news.png>
+                  <_x0032_-col.png j:height="100"
+                                   j:width="120"
+                                   jcr:mixinTypes="jmix:image"
+                                   jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                  </_x0032_-col.png>
+               </thumbnails>
+            </files>
+            <contents jcr:primaryType="jnt:contentFolder"/>
+            <base j:theme="#/modules/eprs-web-templates/templates/files/themes/default"
+                  j:view="eprs-web-templates"
+                  jcr:mixinTypes="jmix:theme"
+                  jcr:primaryType="jnt:template">
+               <home jcr:primaryType="jnt:pageTemplate"/>
+               <simple j:templateThumbnail="#/modules/eprs-web-templates/templates/files/thumbnails/simple.png"
+                       jcr:primaryType="jnt:pageTemplate"/>
+               <nav-menu jcr:mixinTypes="jmix:systemNameReadonly"
+                         jcr:primaryType="jnt:contentList">
+                  <navmenu jcr:primaryType="eprsint:navmenu" maxDepth="4" maxTopLevel="4"/>
+               </nav-menu>
+               <pageTitle jcr:mixinTypes="jmix:systemNameReadonly"
+                          jcr:primaryType="jnt:contentList">
+                  <pagetitle jcr:primaryType="eprsint:pageTitle"/>
+               </pageTitle>
+               <footer jcr:mixinTypes="jmix:systemNameReadonly"
+                       jcr:primaryType="jnt:contentList">
+                  <footer jcr:primaryType="eprsint:footer"/>
+               </footer>
+               <article j:hiddenTemplate="false"
+                        j:view="default"
+                        jcr:primaryType="jnt:pageTemplate">
+                  <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="Article"/>
+               </article>
+               <search-section jcr:mixinTypes="jmix:systemNameReadonly"
+                               jcr:primaryType="jnt:contentList">
+                  <search j:view="search.section"
+                          jcr:mixinTypes="jmix:renderable"
+                          jcr:primaryType="eprsint:search"/>
+               </search-section>
+               <aside-visible jcr:mixinTypes="jmix:systemNameReadonly"
+                              jcr:primaryType="jnt:contentList">
+                  <rich-text jcr:primaryType="jnt:bigText">
+                     <j:translation_en jcr:language="en"
+                                       jcr:primaryType="jnt:translation"
+                                       text="&lt;aside class=&#34;aside-visible&#34; id=&#34;asideVisible&#34;&gt;&#xA;        &lt;ul&gt;&#xA;          &lt;li&gt;&#xA;            &lt;div id=&#34;likeCheckbox&#34; role=&#34;checkbox&#34; aria-label=&#34;Like this article&#34; aria-checked=&#34;false&#34; class=&#34;square-button like-button&#34; tabindex=&#34;0&#34;&gt;&#xA;              &lt;i class=&#34;ph ph-heart&#34;&gt;&lt;/i&gt;&#xA;              &lt;span class=&#34;button_description&#34;&gt;Favorite this&lt;/span&gt;&#xA;              &lt;hr&gt;&#xA;            &lt;/div&gt;&#xA;          &lt;/li&gt;&#xA;&#xA;          &lt;li&gt;&#xA;            &lt;div id=&#34;subscribeCheckbox&#34; role=&#34;checkbox&#34; aria-label=&#34;Subscribe to this article&#34; aria-checked=&#34;false&#34; class=&#34;square-button subscribe-button&#34; tabindex=&#34;-1&#34;&gt;&#xA;              &lt;i class=&#34;ph ph-bell&#34;&gt;&lt;/i&gt;&#xA;              &lt;span class=&#34;button_description&#34;&gt;Get notified&lt;/span&gt;&#xA;              &lt;hr&gt;&#xA;            &lt;/div&gt;&#xA;          &lt;/li&gt;&#xA;&#xA;          &lt;li&gt;&#xA;            &lt;button id=&#34;shareButton&#34; type=&#34;button&#34; aria-label=&#34;Share this article&#34; class=&#34;square-button&#34; tabindex=&#34;-1&#34;&gt;&#xA;              &lt;i class=&#34;ph ph-share-network&#34;&gt;&lt;/i&gt;&#xA;              &lt;span class=&#34;button_description&#34;&gt;Share it&lt;/span&gt;&#xA;              &lt;hr&gt;&#xA;              &lt;div class=&#34;aside-visible__dialog aside-visible__dialog__share&#34; id=&#34;dialogShareButton&#34; aria-expanded=&#34;false&#34;&gt;&#xA;                &lt;div role=&#34;alertdialog&#34; aria-modal=&#34;true&#34; aria-labelledby=&#34;shareButton&#34;&gt;&#xA;                  &lt;span class=&#34;sr-only&#34;&gt;Share&lt;/span&gt;&#xA;                  &lt;div&gt;&#xA;                    &lt;ul&gt;&#xA;                      &lt;li&gt;&#xA;                        &lt;a href=&#34;http://&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&#xA;                          &lt;img src=&#34;../assets/icons/social/fb-icon-light.svg&#34; alt=&#34;Share in Facebook&#34; class=&#34;social-icon&#34;&gt;&#xA;                        &lt;/a&gt;&#xA;                      &lt;/li&gt;&#xA;                      &lt;li&gt;&#xA;                        &lt;a href=&#34;http://&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&#xA;                          &lt;img src=&#34;../assets/icons/social/linkedin-icon-light.svg&#34; alt=&#34;Share in Facebook&#34; class=&#34;social-icon&#34;&gt;&#xA;                        &lt;/a&gt;&#xA;                      &lt;/li&gt;&#xA;                      &lt;li&gt;&#xA;                        &lt;a href=&#34;http://&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&#xA;                          &lt;img src=&#34;../assets/icons/social/x-icon-light.svg&#34; alt=&#34;Share in Facebook&#34; class=&#34;social-icon&#34;&gt;&#xA;                        &lt;/a&gt;&#xA;                      &lt;/li&gt;&#xA;                    &lt;/ul&gt;&#xA;                  &lt;/div&gt;&#xA;                &lt;/div&gt;&#xA;              &lt;/div&gt;&#xA;            &lt;/button&gt;&#xA;          &lt;/li&gt;&#xA;        &lt;/ul&gt;&#xA;      &lt;/aside&gt;"/>
+                  </rich-text>
+               </aside-visible>
+               <aside-burger jcr:mixinTypes="jmix:systemNameReadonly"
+                             jcr:primaryType="jnt:contentList">
+                  <rich-text jcr:primaryType="jnt:bigText">
+                     <j:translation_en jcr:language="en"
+                                       jcr:primaryType="jnt:translation"
+                                       text="&lt;aside class=&#34;aside-burger&#34; id=&#34;asideBurger&#34;&gt;&#xA;        &lt;form action=&#34;./search.html&#34; method=&#34;get&#34; role=&#34;search&#34;&gt;&#xA;          &lt;label for=&#34;searchInput&#34; class=&#34;sr-only&#34;&gt;Search&lt;/label&gt;&#xA;          &lt;input type=&#34;search&#34; id=&#34;searchInput&#34; aria-label=&#34;Search&#34; class=&#34;input-search&#34; placeholder=&#34;Search for files, papers...&#34;&gt;&#xA;          &lt;button type=&#34;submit&#34;&gt;&#xA;            &lt;i class=&#34;ph ph-magnifying-glass&#34;&gt;&lt;/i&gt;&#xA;            &lt;span class=&#34;sr-only&#34;&gt;Search&lt;/span&gt;&#xA;          &lt;/button&gt;&#xA;        &lt;/form&gt;&#xA;&#xA;        &lt;ul&gt;&#xA;          &lt;li&gt;&#xA;            &lt;div id=&#34;likeCheckbox2&#34; role=&#34;checkbox&#34; aria-label=&#34;Like this article&#34; aria-checked=&#34;false&#34; tabindex=&#34;0&#34; class=&#34;like-button&#34;&gt;&#xA;              &lt;span class=&#34;button_description&#34;&gt;Favorite this&lt;/span&gt;&#xA;              &lt;i class=&#34;ph ph-heart&#34;&gt;&lt;/i&gt;&#xA;            &lt;/div&gt;&#xA;          &lt;/li&gt;&#xA;&#xA;          &lt;li&gt;&#xA;            &lt;div id=&#34;subscribeCheckbox2&#34; role=&#34;checkbox&#34; aria-label=&#34;Subscribe to this article&#34; aria-checked=&#34;false&#34; tabindex=&#34;-1&#34; class=&#34;subscribe-button&#34;&gt;&#xA;              &lt;span class=&#34;button_description&#34;&gt;Get notified&lt;/span&gt;&#xA;              &lt;i class=&#34;ph ph-bell&#34;&gt;&lt;/i&gt;&#xA;            &lt;/div&gt;&#xA;          &lt;/li&gt;&#xA;&#xA;          &lt;li&gt;&#xA;            &lt;button id=&#34;shareButton2&#34; type=&#34;button&#34; aria-label=&#34;Share this article&#34; tabindex=&#34;0&#34; aria-expanded=&#34;false&#34;&gt;&#xA;              &lt;div class=&#34;aside-burger__content&#34;&gt;&#xA;                &lt;span class=&#34;button_description&#34;&gt;Share it&lt;/span&gt;&#xA;                &lt;i class=&#34;ph ph-share-network&#34;&gt;&lt;/i&gt;&#xA;              &lt;/div&gt;&#xA;              &lt;div class=&#34;aside-burger__dialog aside-burger__dialog__share&#34;&gt;&#xA;                &lt;div role=&#34;alertdialog&#34; aria-modal=&#34;true&#34; aria-labelledby=&#34;shareButton2&#34;&gt;&#xA;                  &lt;span class=&#34;sr-only&#34;&gt;Share article&lt;/span&gt;&#xA;                  &lt;ul&gt;&#xA;                    &lt;li&gt;&#xA;                      &lt;a href=&#34;http://&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&#xA;                        &lt;img src=&#34;../assets/icons/social/fb-icon-light.svg&#34; alt=&#34;Share in Facebook&#34; class=&#34;social-icon&#34;&gt;&#xA;                      &lt;/a&gt;&#xA;                    &lt;/li&gt;&#xA;                    &lt;li&gt;&#xA;                      &lt;a href=&#34;http://&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&#xA;                        &lt;img src=&#34;../assets/icons/social/linkedin-icon-light.svg&#34; alt=&#34;Share in Facebook&#34; class=&#34;social-icon&#34;&gt;&#xA;                      &lt;/a&gt;&#xA;                    &lt;/li&gt;&#xA;                    &lt;li&gt;&#xA;                      &lt;a href=&#34;http://&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&#xA;                        &lt;img src=&#34;../assets/icons/social/x-icon-light.svg&#34; alt=&#34;Share in Facebook&#34; class=&#34;social-icon&#34;&gt;&#xA;                      &lt;/a&gt;&#xA;                    &lt;/li&gt;&#xA;                  &lt;/ul&gt;&#xA;                &lt;/div&gt;&#xA;              &lt;/div&gt;&#xA;            &lt;/button&gt;&#xA;          &lt;/li&gt;&#xA;        &lt;/ul&gt;&#xA;      &lt;/aside&gt;"/>
+                  </rich-text>
+               </aside-burger>
+               <header-section-1 jcr:mixinTypes="jmix:systemNameReadonly"
+                                 jcr:primaryType="jnt:contentList">
+                  <logo jcr:primaryType="eprsint:logo"
+                        logo="#/modules/eprs-web-templates/files/icons/ep-logo-light.svg"/>
+               </header-section-1>
+               <header-section-search jcr:mixinTypes="jmix:systemNameReadonly"
+                                      jcr:primaryType="jnt:contentList">
+                  <search j:view="header"
+                          jcr:mixinTypes="jmix:renderable"
+                          jcr:primaryType="eprsint:search"/>
+                  <simple-search jcr:primaryType="jnt:simpleSearchForm"
+                                 result="#/modules/eprs-web-templates/home/search-results">
+                     <j:translation_en jcr:language="en"
+                                       jcr:mixinTypes="mix:title"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="Simple search"/>
+                  </simple-search>
+               </header-section-search>
+               <header-section-2 jcr:mixinTypes="jmix:systemNameReadonly"
+                                 jcr:primaryType="jnt:contentList">
+                  <profile jcr:primaryType="eprsint:profile"/>
+                  <login j:view="mini"
+                         jcr:mixinTypes="jmix:renderable"
+                         jcr:primaryType="eprsint:login"/>
+                  <burger jcr:primaryType="eprsint:burger"/>
+               </header-section-2>
+            </base>
+            <content-template j:applyOn="jnt:content"
+                              j:hiddenTemplate="true"
+                              j:priority="1"
+                              j:view="eprs-web-templates"
+                              jcr:primaryType="jnt:contentTemplate">
+               <pagecontent jcr:primaryType="jnt:contentList">
+                  <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay"/>
+               </pagecontent>
+            </content-template>
+         </templates>
+         <home j:isHomePage="true"
+               j:templateName="home"
+               jcr:primaryType="jnt:page">
+            <j:translation_en jcr:language="en"
+                              jcr:mixinTypes="mix:title"
+                              jcr:primaryType="jnt:translation"
+                              jcr:title="Home"/>
+            <search-results j:templateName="home" jcr:primaryType="jnt:page">
+               <j:translation_en jcr:language="en"
+                                 jcr:mixinTypes="mix:title"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="Search Results"/>
+               <pagecontent jcr:mixinTypes="jmix:systemNameReadonly"
+                            jcr:primaryType="jnt:contentList">
+                  <advanced-search-form jcr:primaryType="jnt:advancedSearchForm"/>
+                  <search-results autoSuggest="true"
+                                  autoSuggestHitCount="2"
+                                  autoSuggestMaxTermCount="1"
+                                  autoSuggestMinimumHitCount="2"
+                                  jcr:primaryType="jnt:searchResults"/>
+               </pagecontent>
+            </search-results>
+         </home>
+      </eprs-web-templates>
+   </modules>
+</content>

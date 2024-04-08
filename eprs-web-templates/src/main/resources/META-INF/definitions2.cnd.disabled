@@ -1,0 +1,58 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<eprsint = 'http://eprsnt.ep.parl.union.eu/jahia/intranet'> 
+<eprsmix = 'http://www.eprsmix.ep.parl.union.eu/jahia/intranet'> 
+
+[eprsmix:templateComponent] > jmix:droppableContent, jmix:editorialContent mixin
+ 
+[eprsint:logo] > jnt:content,eprsmix:templateComponent
+  - logo (weakreference, picker[type='image']) < 'jmix:image'
+ 
+[eprsmix:siteLogo] mixin
+ extends = jnt:virtualsite
+ itemtype = content
+ - logo (weakreference, picker[type='image']) mandatory < 'jmix:image'
+  
+  
+ 
+[eprsmix:siteBackground] mixin
+ extends = jnt:virtualsite
+ itemtype = content
+ - background (weakreference, picker[type='image']) mandatory < 'jmix:image'
+  
+  
+  
+  //[eprsint:background] > jnt:content,eprsmix:templateComponent
+  //- background (weakreference, picker[type='image']) < 'jmix:image'
+
+
+[eprsmix:favicon] mixin
+ extends = jnt:virtualsite
+ itemtype = content
+ - icon (weakreference, picker[type='image']) mandatory < 'jmix:image'
+  
+[eprsint:login] > jnt:content,  eprsmix:templateComponent, jmix:studioOnly
+  
+[eprsint:profile] > jnt:content,  eprsmix:templateComponent, jmix:studioOnly  
+ 
+[eprsint:burger] > jnt:content,  eprsmix:templateComponent, jmix:studioOnly   
+  
+  
+[eprsint:navmenu] > jnt:content,  eprsmix:templateComponent, jmix:droppableContent, jmix:navMenuComponent 
+ - maxDepth (long) = '4'
+ - maxTopLevel (long) = '4'
+ 
+ 
+  
+  
+[eprsmix:siteSocialLinks] mixin
+ extends = jnt:virtualsite
+ itemtype = content
+ - facebookLink (string) = 'https://'
+ - googlePlusLink (string) = 'https://'
+ - twitterLink (string) = 'https://'
+ - youtubeLink (string) = 'https://'
+ - instagramLink (string) = 'https://'
+ - linkedinLink (string) = 'https://'
+ - pinterestLink (string) = 'https://'
+ 
